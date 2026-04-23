@@ -1,0 +1,7 @@
+node_modules
+dist
+.git
+.astro
+npm-debug.log
+.DS_Store
+.env*
