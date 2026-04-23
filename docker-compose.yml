@@ -1,0 +1,7 @@
+services:
+  marketing:
+    build: .
+    container_name: vantyra-marketing
+    ports:
+      - "8080:80"
+    restart: unless-stopped
