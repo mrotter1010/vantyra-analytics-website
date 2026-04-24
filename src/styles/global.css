@@ -12,3 +12,44 @@
   --color-vantyra-error: #F87171;
   --color-vantyra-border: #3a3a5c;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section divider — gradient line that fades from transparent at edges */
+.section-divider {
+  height: 1px;
+  width: 100%;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, transparent, var(--color-vantyra-border) 20%, var(--color-vantyra-border) 80%, transparent);
+}
+
+/* Card glow — subtle cyan-tinted lift */
+.card-glow {
+  box-shadow: 0 0 24px rgba(0, 212, 255, 0.06);
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 32px rgba(0, 212, 255, 0.18);
+}
+
+/* Fade-in-on-scroll */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 700ms ease-out, transform 700ms ease-out;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-section {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
