@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Vantyra Analytics">
+<BaseLayout title="Vantyra Analytics | Energy analytics consulting">
   <!-- Hero -->
   <section class="relative min-h-screen flex items-center justify-center overflow-hidden -mt-[72px] pt-[72px]">
     <!-- Animated gradient mesh background -->
@@ -24,14 +24,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         height="160"
         class="mb-8 w-40 h-40"
       />
-      <h1 class="text-5xl font-bold tracking-tight">
-        <span class="text-vantyra-text">Vantyra </span><span class="text-vantyra-accent">Analytics</span>
+      <p class="text-sm uppercase tracking-widest text-vantyra-accent mb-4">Energy analytics consulting for generation, storage, and large energy users</p>
+      <h1 class="text-5xl font-bold tracking-tight text-vantyra-text max-w-3xl">
+        Energy analytics for the decisions you can't afford to get wrong.
       </h1>
       <p class="mt-6 max-w-xl text-2xl font-semibold text-vantyra-text">
-        Solar and storage analytics for every stage of the development cycle.
-      </p>
-      <p class="mt-4 max-w-lg text-lg text-vantyra-text-s">
-        From early-stage site screening to feasibility analysis — fast enough to keep up with your pipeline, accurate enough to defend.
+        Whether you generate energy, store and sell it, or pay for it, we build the analysis your decision rests on.
       </p>
       <div class="mt-10 flex items-center gap-4">
         <a
@@ -41,128 +39,76 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           Schedule a Call
         </a>
         <a
-          href="https://app.vantyraanalytics.com"
+          href="#practices"
           class="rounded-full border border-vantyra-border px-6 py-3 font-semibold text-vantyra-text hover:border-vantyra-accent hover:text-vantyra-accent transition-colors"
         >
-          Try the Platform
+          See what we do
         </a>
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="fade-in-section scroll-mt-20 bg-vantyra-bg py-12">
+  <!-- Practices -->
+  <section id="practices" class="fade-in-section scroll-mt-20 bg-vantyra-bg-s py-12">
     <div class="mx-auto max-w-6xl px-6">
       <div class="section-divider"></div>
-      <p class="text-sm uppercase tracking-widest text-vantyra-accent mb-3">About</p>
-      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-vantyra-text mb-4">Built from inside the industry, for the developers who keep it moving.</h2>
-      <p class="text-lg text-vantyra-text-s leading-relaxed max-w-3xl mb-12">
-        Vantyra Analytics was built to close a specific gap. Inside large utility-scale developers, analysts have access to high-resolution resource modeling, custom production pipelines, and dispatch optimization tooling — built and maintained by internal teams. Outside that environment, distributed generation developers are usually working with a fraction of that toolkit: free satellite data, generic assumptions, slow third-party turnaround.
-      </p>
-      <p class="text-base text-vantyra-text-s leading-relaxed mt-4">
-        The platform brings that internal-team caliber of analytics to teams that don't have the headcount to build it themselves. It was developed out of that internal-team experience — including time spent at NextEra Energy building production modeling and dispatch optimization for utility-scale and DG portfolios — and refined into a workflow that handles site screening, feasibility, and design optimization at the pace development actually moves.
-      </p>
-      <p class="text-base text-vantyra-text-s leading-relaxed mt-4">
-        The technical foundation is widely used, industry-standard physics-based models — enhanced with proprietary, research-backed bias correction to close the gap between satellite and ground-truth data.
-      </p>
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Solar -->
+        <a href="#solar" class="card-glow bg-vantyra-bg rounded-xl border border-vantyra-border p-6 transition-all duration-200 hover:border-vantyra-accent hover:-translate-y-1 block">
+          <p class="text-sm uppercase tracking-widest text-vantyra-accent mb-2">Solar</p>
+          <h3 class="text-xl font-semibold text-vantyra-text mb-2">Solar production and design analytics</h3>
+          <p class="text-base text-vantyra-text-s leading-relaxed mb-4">Production modeling, buildable land, and DER design, from a coordinate to a defensible estimate.</p>
+          <p class="text-sm font-semibold text-vantyra-accent">Explore this practice &rarr;</p>
+        </a>
+        <!-- Storage -->
+        <a href="#storage" class="card-glow bg-vantyra-bg rounded-xl border border-vantyra-border p-6 transition-all duration-200 hover:border-vantyra-success hover:-translate-y-1 block">
+          <p class="text-sm uppercase tracking-widest text-vantyra-success mb-2">Storage and markets</p>
+          <h3 class="text-xl font-semibold text-vantyra-text mb-2">Storage and grid-scale analytics</h3>
+          <p class="text-base text-vantyra-text-s leading-relaxed mb-4">Battery analysis and optimization, and wholesale market analysis.</p>
+          <p class="text-sm font-semibold text-vantyra-success">Explore this practice &rarr;</p>
+        </a>
+        <!-- Budgeting -->
+        <a href="#budgeting" class="card-glow bg-vantyra-bg rounded-xl border border-vantyra-border p-6 transition-all duration-200 hover:border-vantyra-accent-s hover:-translate-y-1 block">
+          <p class="text-sm uppercase tracking-widest text-vantyra-accent-s mb-2">Budgeting</p>
+          <h3 class="text-xl font-semibold text-vantyra-text mb-2">Energy budgeting and forecasting</h3>
+          <p class="text-base text-vantyra-text-s leading-relaxed mb-4">Cost and consumption forecasts for every facility, built from your billing and operational data.</p>
+          <p class="text-sm font-semibold text-vantyra-accent-s">Explore this practice &rarr;</p>
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- Capabilities -->
-  <section id="capabilities" class="fade-in-section scroll-mt-20 bg-vantyra-bg-s py-12">
+  <!-- Solar -->
+  <section id="solar" class="fade-in-section scroll-mt-20 bg-vantyra-bg py-12">
     <div class="mx-auto max-w-6xl px-6">
       <div class="section-divider"></div>
-      <p class="text-sm uppercase tracking-widest text-vantyra-accent mb-3">What It Does</p>
-      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-vantyra-text mb-4">Capabilities</h2>
+      <p class="text-sm uppercase tracking-widest text-vantyra-accent mb-3">Solar</p>
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-vantyra-text mb-4">Solar production and design analytics</h2>
       <p class="text-lg text-vantyra-text-s leading-relaxed max-w-3xl mb-12">
-        Five integrated modules covering the full development cycle — site identification, resource analysis, system design, economics, and market exposure. All accessible through a conversational interface that handles the orchestration for you.
+        From early screening to preconstruction feasibility, we model how a solar project will perform before capital is committed. You get production estimates and design comparisons you can put in front of lenders, partners, and investment committees. Built for distributed generation, with the scale to support utility-scale projects.
       </p>
-      <div class="grid gap-8 md:grid-cols-6">
-        <!-- Card 1 -->
-        <div class="md:col-span-2 card-glow bg-vantyra-bg-s rounded-xl border border-vantyra-border p-6 transition-all duration-200 hover:border-vantyra-accent hover:-translate-y-1">
-          <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-vantyra-accent/10">
-            <svg class="h-5 w-5 text-vantyra-accent" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-              <circle cx="10" cy="10" r="4" />
-              <line x1="10" y1="1" x2="10" y2="5" />
-              <line x1="10" y1="15" x2="10" y2="19" />
-              <line x1="1" y1="10" x2="5" y2="10" />
-              <line x1="15" y1="10" x2="19" y2="10" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold text-vantyra-text mb-2">Resource & Production Modeling</h3>
-          <p class="text-base text-vantyra-text-s leading-relaxed">
-            Hourly solar production simulation built on PySAM with proprietary bias correction applied to NSRDB irradiance and ERA5 climate inputs. Validated against measured plant output, with errors well within typical engineering tolerances — substantially tighter than PVWatts at the same sites.
-          </p>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="card-glow bg-vantyra-bg-s rounded-xl border border-vantyra-border p-6 transition-all duration-200 hover:border-vantyra-accent hover:-translate-y-1">
+          <h3 class="text-xl font-semibold text-vantyra-text mb-2">Resource and production modeling</h3>
+          <p class="text-base text-vantyra-text-s leading-relaxed">Hourly production estimates from site-specific weather and system design.</p>
         </div>
-        <!-- Card 2 -->
-        <div class="md:col-span-2 card-glow bg-vantyra-bg-s rounded-xl border border-vantyra-border p-6 transition-all duration-200 hover:border-vantyra-accent hover:-translate-y-1">
-          <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-vantyra-accent/10">
-            <svg class="h-5 w-5 text-vantyra-accent" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="2" y="2" width="7" height="7" rx="1" />
-              <rect x="11" y="2" width="7" height="7" rx="1" />
-              <rect x="2" y="11" width="7" height="7" rx="1" />
-              <rect x="11" y="11" width="7" height="7" rx="1" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold text-vantyra-text mb-2">Buildable Land Analysis</h3>
-          <p class="text-base text-vantyra-text-s leading-relaxed">
-            Slope, land cover, and exclusion-zone analysis from a KMZ or coordinate. Returns acreage usable for solar after applying setbacks and terrain constraints, plus a layout-ready estimate of installable DC capacity.
-          </p>
+        <div class="card-glow bg-vantyra-bg-s rounded-xl border border-vantyra-border p-6 transition-all duration-200 hover:border-vantyra-accent hover:-translate-y-1">
+          <h3 class="text-xl font-semibold text-vantyra-text mb-2">Buildable land analysis</h3>
+          <p class="text-base text-vantyra-text-s leading-relaxed">Usable acreage after constraints, so capacity estimates start from land you can build on.</p>
         </div>
-        <!-- Card 3 -->
-        <div class="md:col-span-2 card-glow bg-vantyra-bg-s rounded-xl border border-vantyra-border p-6 transition-all duration-200 hover:border-vantyra-accent hover:-translate-y-1">
-          <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-vantyra-accent/10">
-            <svg class="h-5 w-5 text-vantyra-accent" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="2" y="12" width="4" height="6" rx="0.5" />
-              <rect x="8" y="7" width="4" height="11" rx="0.5" />
-              <rect x="14" y="3" width="4" height="15" rx="0.5" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold text-vantyra-text mb-2">DER Design Optimization</h3>
-          <p class="text-base text-vantyra-text-s leading-relaxed">
-            Sweeps GCR, DC/AC ratio, and battery sizing to find the configuration that maximizes production, minimizes LCOE, or maximizes NPV. Joint solar + storage optimization handles the interactions between system design and dispatch revenue.
-          </p>
-        </div>
-        <!-- Card 4 -->
-        <div class="md:col-span-2 md:col-start-2 card-glow bg-vantyra-bg-s rounded-xl border border-vantyra-border p-6 transition-all duration-200 hover:border-vantyra-accent hover:-translate-y-1">
-          <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-vantyra-accent/10">
-            <svg class="h-5 w-5 text-vantyra-accent" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="4" y="6" width="12" height="10" rx="1.5" />
-              <line x1="7" y1="6" x2="7" y2="4" />
-              <line x1="13" y1="6" x2="13" y2="4" />
-              <line x1="7" y1="4" x2="13" y2="4" />
-              <line x1="4" y1="11" x2="16" y2="11" />
-              <rect x="8" y="11" width="4" height="2" fill="currentColor" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold text-vantyra-text mb-2">BESS Analysis</h3>
-          <p class="text-base text-vantyra-text-s leading-relaxed">
-            Hourly battery dispatch under custom-built tariff structures — TOU, demand charges, tiered rates, and wholesale market prices — modeled from your inputs to match the actual rate the project will see. Supports behind-the-meter and front-of-the-meter operating modes, ITC-compliant solar-only charging, and degradation over the project life.
-          </p>
-        </div>
-        <!-- Card 5 -->
-        <div class="md:col-span-2 card-glow bg-vantyra-bg-s rounded-xl border border-vantyra-border p-6 transition-all duration-200 hover:border-vantyra-accent hover:-translate-y-1">
-          <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-vantyra-accent/10">
-            <svg class="h-5 w-5 text-vantyra-accent" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
-              <polyline points="2,16 6,10 10,13 14,5 18,8" />
-              <line x1="2" y1="18" x2="18" y2="18" />
-              <line x1="2" y1="2" x2="2" y2="18" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold text-vantyra-text mb-2">Wholesale Market Data</h3>
-          <p class="text-base text-vantyra-text-s leading-relaxed">
-            Pulls historical and recent LMP data for CAISO, ERCOT, and PJM. Combined with the platform's BESS dispatch engine, supports revenue analysis for merchant solar and standalone storage projects.
-          </p>
+        <div class="card-glow bg-vantyra-bg-s rounded-xl border border-vantyra-border p-6 transition-all duration-200 hover:border-vantyra-accent hover:-translate-y-1">
+          <h3 class="text-xl font-semibold text-vantyra-text mb-2">DER design optimization</h3>
+          <p class="text-base text-vantyra-text-s leading-relaxed">Compare system designs and sizing to find the configuration that fits the site and the economics.</p>
         </div>
       </div>
 
-      <!-- Workflow -->
+      <!-- Platform block -->
       <div class="mt-16">
-        <p class="text-sm uppercase tracking-widest text-vantyra-accent mb-3">Workflow</p>
+        <p class="text-sm uppercase tracking-widest text-vantyra-accent mb-3">The Vantyra platform</p>
         <p class="text-base text-vantyra-text-s leading-relaxed max-w-3xl mb-8">
-          A conversational interface, with full message history. Describe the analysis you want — the platform handles the orchestration.
+          This practice runs on the Vantyra platform, our own modeling engine for solar and storage. It turns a site location and a few design inputs into hourly production, with the same assumptions applied to every site. Clients who want to run their own scenarios can get platform access.
         </p>
-        <div class="flex flex-col gap-12 max-w-5xl mx-auto">
+        <div class="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto">
           <!-- Step 1 -->
           <div>
             <p class="text-sm uppercase tracking-widest text-vantyra-accent mb-3">Step 1</p>
@@ -191,37 +137,114 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </div>
         </div>
       </div>
+
+      <!-- Validation -->
+      <div class="mt-16">
+        <p class="text-sm uppercase tracking-widest text-vantyra-accent mb-3">Validation</p>
+        <h3 class="text-4xl md:text-5xl font-bold tracking-tight text-vantyra-text mb-4">Estimates you can defend.</h3>
+        <p class="text-lg text-vantyra-text-s leading-relaxed max-w-3xl mb-12">
+          Production modeling is only useful if it matches reality. PVDAQ sites from NREL's archive — across different geographies and mounting types — have been used to validate platform outputs against measured plant data, with results well within typical engineering tolerances.
+        </p>
+
+        <!-- Stat cards -->
+        <p class="text-sm uppercase tracking-wider text-vantyra-text-s mb-6">Validation sites</p>
+        <div class="grid gap-8 md:grid-cols-3">
+          <div class="card-glow bg-vantyra-bg-s rounded-xl border border-vantyra-border p-6 text-center transition-all duration-200 hover:border-vantyra-accent hover:-translate-y-1">
+            <p class="text-5xl md:text-6xl font-bold text-vantyra-accent">&minus;0.3%</p>
+            <p class="mt-3 text-sm uppercase tracking-wider text-vantyra-text-s">Kersey, CO &bull; 4.7 MW single-axis tracker</p>
+          </div>
+          <div class="card-glow bg-vantyra-bg-s rounded-xl border border-vantyra-border p-6 text-center transition-all duration-200 hover:border-vantyra-accent hover:-translate-y-1">
+            <p class="text-5xl md:text-6xl font-bold text-vantyra-accent">+3.8%</p>
+            <p class="mt-3 text-sm uppercase tracking-wider text-vantyra-text-s">Arbuckle, CA &bull; 893 kW fixed-tilt</p>
+          </div>
+          <div class="card-glow bg-vantyra-bg-s rounded-xl border border-vantyra-border p-6 text-center transition-all duration-200 hover:border-vantyra-accent hover:-translate-y-1">
+            <p class="text-5xl md:text-6xl font-bold text-vantyra-accent">7&ndash;10%</p>
+            <p class="mt-3 text-sm uppercase tracking-wider text-vantyra-text-s">Closer to measured than PVWatts (both sites)</p>
+          </div>
+        </div>
+        <p class="text-sm italic text-vantyra-text-s text-center mt-6">
+          Benchmark methodology follows the NREL SAM validation framework (TP-6A20-61497). Additional site validation in progress.
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- Validation -->
-  <section id="validation" class="fade-in-section scroll-mt-20 bg-vantyra-bg py-12">
+  <!-- Storage -->
+  <section id="storage" class="fade-in-section scroll-mt-20 bg-vantyra-bg-s py-12">
     <div class="mx-auto max-w-6xl px-6">
       <div class="section-divider"></div>
-      <p class="text-sm uppercase tracking-widest text-vantyra-accent mb-3">Validation</p>
-      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-vantyra-text mb-4">Estimates you can defend.</h2>
+      <p class="text-sm uppercase tracking-widest text-vantyra-success mb-3">Storage and markets</p>
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-vantyra-text mb-4">Storage and grid-scale analytics</h2>
       <p class="text-lg text-vantyra-text-s leading-relaxed max-w-3xl mb-12">
-        Production modeling is only useful if it matches reality. PVDAQ sites from NREL's archive — across different geographies and mounting types — have been used to validate platform outputs against measured plant data, with results well within typical engineering tolerances.
+        Storage economics and market exposure both come down to prices, and prices change by location, hour, and season. We model how a battery would operate against those prices and the tariffs around them, and we analyze wholesale market data for the decisions that depend on it. Clients include owners evaluating a storage project and any organization whose costs or revenues move with the market.
       </p>
-
-      <!-- Stat cards -->
-      <p class="text-sm uppercase tracking-wider text-vantyra-text-s mb-6">Validation sites</p>
-      <div class="grid gap-8 md:grid-cols-3">
-        <div class="card-glow bg-vantyra-bg-s rounded-xl border border-vantyra-border p-6 text-center transition-all duration-200 hover:border-vantyra-accent hover:-translate-y-1">
-          <p class="text-5xl md:text-6xl font-bold text-vantyra-accent">&minus;0.3%</p>
-          <p class="mt-3 text-sm uppercase tracking-wider text-vantyra-text-s">Kersey, CO &bull; 4.7 MW single-axis tracker</p>
+      <div class="grid gap-8 md:grid-cols-2">
+        <div class="card-glow bg-vantyra-bg rounded-xl border border-vantyra-border p-6 transition-all duration-200 hover:border-vantyra-success hover:-translate-y-1">
+          <h3 class="text-xl font-semibold text-vantyra-text mb-2">BESS analysis and optimization</h3>
+          <p class="text-base text-vantyra-text-s leading-relaxed">Size and dispatch storage against real prices, tariffs, and site load, so the economics hold up under scrutiny.</p>
         </div>
-        <div class="card-glow bg-vantyra-bg-s rounded-xl border border-vantyra-border p-6 text-center transition-all duration-200 hover:border-vantyra-accent hover:-translate-y-1">
-          <p class="text-5xl md:text-6xl font-bold text-vantyra-accent">+3.8%</p>
-          <p class="mt-3 text-sm uppercase tracking-wider text-vantyra-text-s">Arbuckle, CA &bull; 893 kW fixed-tilt</p>
-        </div>
-        <div class="card-glow bg-vantyra-bg-s rounded-xl border border-vantyra-border p-6 text-center transition-all duration-200 hover:border-vantyra-accent hover:-translate-y-1">
-          <p class="text-5xl md:text-6xl font-bold text-vantyra-accent">7&ndash;10%</p>
-          <p class="mt-3 text-sm uppercase tracking-wider text-vantyra-text-s">Closer to measured than PVWatts (both sites)</p>
+        <div class="card-glow bg-vantyra-bg rounded-xl border border-vantyra-border p-6 transition-all duration-200 hover:border-vantyra-success hover:-translate-y-1">
+          <h3 class="text-xl font-semibold text-vantyra-text mb-2">Wholesale market analysis</h3>
+          <p class="text-base text-vantyra-text-s leading-relaxed">Node-level wholesale price history, translated into what it means for a project, a contract, or a budget.</p>
         </div>
       </div>
-      <p class="text-sm italic text-vantyra-text-s text-center mt-6">
-        Benchmark methodology follows the NREL SAM validation framework (TP-6A20-61497). Additional site validation in progress.
+    </div>
+  </section>
+
+  <!-- Budgeting -->
+  <section id="budgeting" class="fade-in-section scroll-mt-20 bg-vantyra-bg py-12">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="section-divider"></div>
+      <p class="text-sm uppercase tracking-widest text-vantyra-accent-s mb-3">Budgeting</p>
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-vantyra-text mb-4">Energy budgeting and forecasting</h2>
+      <p class="text-lg text-vantyra-text-s leading-relaxed max-w-3xl mb-12">
+        Energy is hard to budget for across many facilities, each with its own usage pattern and cost drivers. We model each site's billing and operational data in depth to find the trends behind its cost and consumption, and our models can leverage weather normalization, natural gas prices, and other external drivers to sharpen the forecast. We deliver sound, actionable insight your team can use right away: a defensible budget, a realistic range of outcomes, and early warning when a site drifts from plan. We work in regulated and deregulated markets, for a single facility or a full portfolio.
+      </p>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="card-glow bg-vantyra-bg-s rounded-xl border border-vantyra-border p-6 transition-all duration-200 hover:border-vantyra-accent-s hover:-translate-y-1">
+          <p class="text-sm uppercase tracking-widest text-vantyra-accent-s mb-2">Step 1</p>
+          <h3 class="text-xl font-semibold text-vantyra-text mb-2">Share your billing and operational data</h3>
+          <p class="text-base text-vantyra-text-s leading-relaxed">Monthly cost and kWh for each site, plus any operational data that drives usage.</p>
+        </div>
+        <div class="card-glow bg-vantyra-bg-s rounded-xl border border-vantyra-border p-6 transition-all duration-200 hover:border-vantyra-accent-s hover:-translate-y-1">
+          <p class="text-sm uppercase tracking-widest text-vantyra-accent-s mb-2">Step 2</p>
+          <h3 class="text-xl font-semibold text-vantyra-text mb-2">We model each site</h3>
+          <p class="text-base text-vantyra-text-s leading-relaxed">Each site gets its own forecast, built on its own data. That captures what regional or portfolio-level models average away, and gives you clarity and specificity down to the facility.</p>
+        </div>
+        <div class="card-glow bg-vantyra-bg-s rounded-xl border border-vantyra-border p-6 transition-all duration-200 hover:border-vantyra-accent-s hover:-translate-y-1">
+          <p class="text-sm uppercase tracking-widest text-vantyra-accent-s mb-2">Step 3</p>
+          <h3 class="text-xl font-semibold text-vantyra-text mb-2">Delivery that fits your workflow</h3>
+          <p class="text-base text-vantyra-text-s leading-relaxed">From spreadsheets and workbooks to dashboards that track actuals and send alerts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How we deliver -->
+  <section id="deliver" class="fade-in-section scroll-mt-20 bg-vantyra-bg-s py-12">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="section-divider"></div>
+      <p class="text-sm uppercase tracking-widest text-vantyra-accent mb-3">How we deliver</p>
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-vantyra-text mb-4">Built around how you work.</h2>
+      <p class="text-lg text-vantyra-text-s leading-relaxed max-w-3xl mb-8">
+        You work directly with the consultant who builds the analysis, with no handoff to a larger team. Each engagement is scoped around the decision you need to make, and deliverables come in the format your team already uses.
+      </p>
+      <ul class="list-disc pl-6 space-y-3 text-base text-vantyra-text-s leading-relaxed max-w-3xl">
+        <li>Scoped to your decision, not a generic report</li>
+        <li>Reports, workbooks, or dashboards, whichever fits your team</li>
+        <li>Ongoing updates as new data comes in</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="fade-in-section scroll-mt-20 bg-vantyra-bg py-12">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="section-divider"></div>
+      <p class="text-sm uppercase tracking-widest text-vantyra-accent mb-3">About</p>
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-vantyra-text mb-4">Built from inside the industry.</h2>
+      <p class="text-lg text-vantyra-text-s leading-relaxed max-w-3xl">
+        Vantyra was built by an energy professional who has worked across the whole problem: climate and solar modeling, battery storage and dispatch optimization, wholesale market and tariff analysis, budgeting and forecasting, and building the custom tools and workflow automations behind it all. That range means one consultant for questions that usually take three. Every engagement rests on the same method: real data, rigorous modeling of what drives the result, and assumptions laid out so you can see and challenge them. The point is clarity, so you can focus on taking action.
       </p>
     </div>
   </section>
@@ -230,10 +253,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section id="contact" class="fade-in-section scroll-mt-20 bg-vantyra-bg-s py-12">
     <div class="mx-auto max-w-6xl px-6">
       <div class="section-divider"></div>
-      <p class="text-sm uppercase tracking-widest text-vantyra-accent mb-3">Get in Touch</p>
-      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-vantyra-text mb-4">Let's put your project through the platform.</h2>
+      <p class="text-sm uppercase tracking-widest text-vantyra-accent mb-3">Get in touch</p>
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-vantyra-text mb-4">Tell us what you're working on.</h2>
       <p class="text-lg text-vantyra-text-s leading-relaxed max-w-3xl mb-12">
-        Tell us what you're working on — site screening, feasibility, BESS sizing, market analysis — and we'll walk you through what the platform delivers.
+        Evaluating a project, a battery, or next year's energy budget? We'll tell you how we'd approach it.
       </p>
 
       <!-- Calendly inline widget begin -->
